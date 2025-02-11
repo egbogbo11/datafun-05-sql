@@ -33,6 +33,7 @@ Activate the virtual environment:
 
 ```bash
 .\.venv\Scripts\activate
+```
 
 ## Create requirements.txt and download imports
 Add the following libraries to your requirements.txt file:
