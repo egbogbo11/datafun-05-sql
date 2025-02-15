@@ -46,3 +46,78 @@
 2025-02-13 19:51:58.425 | INFO     | __main__:execute_sql_file:30 - Executed: C:\Projects\datafun-05-sql\sql_create\03_insert_records.sql
 2025-02-13 19:51:58.426 | INFO     | __main__:main:60 - Database setup completed successfully.
 2025-02-13 19:51:58.426 | INFO     | __main__:main:65 - Database connection closed.
+2025-02-14 17:44:01.460 | INFO     | utils_logger:<module>:41 - Logging to file: logs\project_log.log
+2025-02-14 17:44:01.461 | INFO     | __main__:main:36 - Starting feature queries execution...
+2025-02-14 17:44:01.462 | INFO     | __main__:main:52 - Connected to database: C:\Projects\datafun-05-sql\data\db.sqlite
+2025-02-14 17:44:01.463 | INFO     | __main__:execute_sql_file:27 - Executed: C:\Projects\datafun-05-sql\sql_features\delete_records.sql
+2025-02-14 17:44:01.464 | INFO     | __main__:execute_sql_file:27 - Executed: C:\Projects\datafun-05-sql\sql_features\update_records.sql
+2025-02-14 17:44:01.464 | INFO     | __main__:main:58 - Feature queries execution completed successfully.
+2025-02-14 17:44:01.464 | INFO     | __main__:main:63 - Database connection closed.
+2025-02-14 17:55:22.590 | INFO     | utils_logger:<module>:41 - Logging to file: logs\project_log.log
+2025-02-14 17:55:22.590 | INFO     | __main__:main:36 - Starting feature queries execution...
+2025-02-14 17:55:22.591 | INFO     | __main__:main:52 - Connected to database: C:\Projects\datafun-05-sql\data\db.sqlite
+2025-02-14 17:55:22.602 | ERROR    | __main__:execute_sql_file:29 - Failed to execute C:\Projects\datafun-05-sql\sql_features\delete_records.sql: incomplete input
+2025-02-14 17:55:22.602 | ERROR    | __main__:main:60 - Error during feature queries execution: incomplete input
+2025-02-14 17:55:22.602 | INFO     | __main__:main:63 - Database connection closed.
+2025-02-14 17:56:37.317 | INFO     | utils_logger:<module>:41 - Logging to file: logs\project_log.log
+2025-02-14 17:56:37.317 | INFO     | __main__:main:36 - Starting feature queries execution...
+2025-02-14 17:56:37.318 | INFO     | __main__:main:52 - Connected to database: C:\Projects\datafun-05-sql\data\db.sqlite
+2025-02-14 17:56:37.341 | INFO     | __main__:execute_sql_file:27 - Executed: C:\Projects\datafun-05-sql\sql_features\delete_records.sql
+2025-02-14 17:56:37.342 | INFO     | __main__:execute_sql_file:27 - Executed: C:\Projects\datafun-05-sql\sql_features\update_records.sql
+2025-02-14 17:56:37.342 | INFO     | __main__:main:58 - Feature queries execution completed successfully.
+2025-02-14 17:56:37.343 | INFO     | __main__:main:63 - Database connection closed.
+2025-02-14 18:13:07.858 | INFO     | utils_logger:<module>:41 - Logging to file: logs\project_log.log
+2025-02-14 18:13:07.859 | INFO     | __main__:main:36 - Starting feature queries execution...
+2025-02-14 18:13:07.860 | INFO     | __main__:main:52 - Connected to database: C:\Projects\datafun-05-sql\data\db.sqlite
+2025-02-14 18:13:07.861 | INFO     | __main__:execute_sql_file:27 - Executed: C:\Projects\datafun-05-sql\sql_features\delete_records.sql
+2025-02-14 18:13:07.877 | INFO     | __main__:execute_sql_file:27 - Executed: C:\Projects\datafun-05-sql\sql_features\update_records.sql
+2025-02-14 18:13:07.878 | INFO     | __main__:main:58 - Feature queries execution completed successfully.
+2025-02-14 18:13:07.878 | INFO     | __main__:main:63 - Database connection closed.
+2025-02-14 18:32:40.937 | INFO     | utils_logger:<module>:41 - Logging to file: logs\project_log.log
+2025-02-14 18:32:40.938 | INFO     | __main__:main:36 - Starting feature queries execution...
+2025-02-14 18:32:40.939 | INFO     | __main__:main:52 - Connected to database: C:\Projects\datafun-05-sql\data\db.sqlite
+2025-02-14 18:32:40.947 | INFO     | __main__:execute_sql_file:27 - Executed: C:\Projects\datafun-05-sql\sql_features\delete_records.sql
+2025-02-14 18:32:40.948 | INFO     | __main__:execute_sql_file:27 - Executed: C:\Projects\datafun-05-sql\sql_features\update_records.sql
+2025-02-14 18:32:40.949 | INFO     | __main__:main:58 - Feature queries execution completed successfully.
+2025-02-14 18:32:40.949 | INFO     | __main__:main:63 - Database connection closed.
+2025-02-14 18:36:24.856 | INFO     | utils_logger:<module>:41 - Logging to file: logs\project_log.log
+2025-02-14 18:36:24.857 | INFO     | __main__:main:36 - Starting feature queries execution...
+2025-02-14 18:36:24.859 | INFO     | __main__:main:52 - Connected to database: C:\Projects\datafun-05-sql\data\db.sqlite
+2025-02-14 18:36:24.873 | INFO     | __main__:execute_sql_file:27 - Executed: C:\Projects\datafun-05-sql\sql_features\delete_records.sql
+2025-02-14 18:36:24.884 | INFO     | __main__:execute_sql_file:27 - Executed: C:\Projects\datafun-05-sql\sql_features\update_records.sql
+2025-02-14 18:36:24.885 | INFO     | __main__:main:58 - Feature queries execution completed successfully.
+2025-02-14 18:36:24.885 | INFO     | __main__:main:63 - Database connection closed.
+2025-02-14 18:37:42.817 | INFO     | utils_logger:<module>:41 - Logging to file: logs\project_log.log
+2025-02-14 18:37:42.817 | INFO     | __main__:main:37 - Starting feature queries execution...
+2025-02-14 18:37:42.818 | INFO     | __main__:main:53 - Connected to database: C:\Projects\datafun-05-sql\data\db.sqlite
+2025-02-14 18:37:42.819 | INFO     | __main__:execute_sql_file:28 - Executed: C:\Projects\datafun-05-sql\sql_features\delete_records.sql
+2025-02-14 18:37:42.819 | INFO     | __main__:execute_sql_file:28 - Executed: C:\Projects\datafun-05-sql\sql_features\update_records.sql
+2025-02-14 18:37:42.820 | INFO     | __main__:main:59 - Feature queries execution completed successfully.
+2025-02-14 18:37:42.820 | INFO     | __main__:main:64 - Database connection closed.
+2025-02-14 18:50:05.721 | INFO     | utils_logger:<module>:41 - Logging to file: logs\project_log.log
+2025-02-14 18:50:05.721 | INFO     | __main__:main:31 - Starting SQL query execution...
+2025-02-14 18:50:05.722 | INFO     | __main__:main:47 - Connected to database: C:\Projects\datafun-05-sql\data\db.sqlite
+2025-02-14 18:50:05.731 | INFO     | __main__:execute_sql_file:23 - Executed: C:\Projects\datafun-05-sql\sql_queries\query_aggregation.sql
+2025-02-14 18:50:05.733 | INFO     | __main__:execute_sql_file:23 - Executed: C:\Projects\datafun-05-sql\sql_queries\query_filter.sql
+2025-02-14 18:50:05.743 | INFO     | __main__:execute_sql_file:23 - Executed: C:\Projects\datafun-05-sql\sql_queries\query_group_by.sql
+2025-02-14 18:50:05.752 | INFO     | __main__:execute_sql_file:23 - Executed: C:\Projects\datafun-05-sql\sql_queries\query_join.sql
+2025-02-14 18:50:05.761 | INFO     | __main__:execute_sql_file:23 - Executed: C:\Projects\datafun-05-sql\sql_queries\query_sorting.sql
+2025-02-14 18:50:05.761 | INFO     | __main__:main:53 - SQL query execution completed successfully.
+2025-02-14 18:50:05.762 | INFO     | __main__:main:58 - Database connection closed.
+2025-02-14 18:53:43.675 | INFO     | utils_logger:<module>:41 - Logging to file: logs\project_log.log
+2025-02-14 18:53:43.675 | INFO     | __main__:main:37 - Starting feature queries execution...
+2025-02-14 18:53:43.676 | INFO     | __main__:main:53 - Connected to database: C:\Projects\datafun-05-sql\data\db.sqlite
+2025-02-14 18:53:43.678 | INFO     | __main__:execute_sql_file:28 - Executed: C:\Projects\datafun-05-sql\sql_features\delete_records.sql
+2025-02-14 18:53:43.694 | INFO     | __main__:execute_sql_file:28 - Executed: C:\Projects\datafun-05-sql\sql_features\update_records.sql
+2025-02-14 18:53:43.695 | INFO     | __main__:main:59 - Feature queries execution completed successfully.
+2025-02-14 18:53:43.695 | INFO     | __main__:main:64 - Database connection closed.
+2025-02-14 18:54:25.096 | INFO     | utils_logger:<module>:41 - Logging to file: logs\project_log.log
+2025-02-14 18:54:25.097 | INFO     | __main__:main:30 - Starting SQL query execution...
+2025-02-14 18:54:25.098 | INFO     | __main__:main:46 - Connected to database: C:\Projects\datafun-05-sql\data\db.sqlite
+2025-02-14 18:54:25.099 | INFO     | __main__:execute_sql_file:22 - Executed: C:\Projects\datafun-05-sql\sql_queries\query_aggregation.sql
+2025-02-14 18:54:25.099 | INFO     | __main__:execute_sql_file:22 - Executed: C:\Projects\datafun-05-sql\sql_queries\query_filter.sql
+2025-02-14 18:54:25.100 | INFO     | __main__:execute_sql_file:22 - Executed: C:\Projects\datafun-05-sql\sql_queries\query_group_by.sql
+2025-02-14 18:54:25.100 | INFO     | __main__:execute_sql_file:22 - Executed: C:\Projects\datafun-05-sql\sql_queries\query_join.sql
+2025-02-14 18:54:25.101 | INFO     | __main__:execute_sql_file:22 - Executed: C:\Projects\datafun-05-sql\sql_queries\query_sorting.sql
+2025-02-14 18:54:25.101 | INFO     | __main__:main:52 - SQL query execution completed successfully.
+2025-02-14 18:54:25.101 | INFO     | __main__:main:57 - Database connection closed.

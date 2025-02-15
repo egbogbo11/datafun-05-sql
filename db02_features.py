@@ -24,6 +24,7 @@ def execute_sql_file(connection, file_path) -> None:
             sql_script: str = file.read()
         with connection:
             connection.executescript(sql_script)
+            connection.commit()
             logger.info(f"Executed: {file_path}")
     except Exception as e:
         logger.error(f"Failed to execute {file_path}: {e}")

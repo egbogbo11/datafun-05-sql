@@ -1,44 +1,60 @@
 import sqlite3
+import os
+import pathlib
 
-# Connect to the database (make sure your database file path is correct)
-conn = sqlite3.connect('project.sqlite3')
-cursor = conn.cursor()
+# Import local modules
+from utils_logger import logger
 
-# 1. Aggregation Query Example: Count the number of books
-cursor.execute("SELECT COUNT(*) FROM books")
-count_books = cursor.fetchone()
-print("Total number of books:", count_books[0])
+def execute_sql_file(connection, file_path) -> None:
+    """
+    Executes a SQL file using the provided SQLite connection.
 
-# 2. Filter Query Example: Find books published after 1950
-cursor.execute("SELECT title, publication_year FROM books WHERE publication_year > 1950")
-books_after_1950 = cursor.fetchall()
-print("Books published after 1950:")
-for book in books_after_1950:
-    print(book)
+    Args:
+        connection (sqlite3.Connection): SQLite connection object.
+        file_path (str): Path to the SQL file to be executed.
+    """
+    try:
+        with open(file_path, 'r') as file:
+            sql_script: str = file.read()
+        with connection:
+            connection.executescript(sql_script)
+            connection.commit()
+            logger.info(f"Executed: {file_path}")
+    except Exception as e:
+        logger.error(f"Failed to execute {file_path}: {e}")
+        raise
 
-# 3. Sorting Query Example: Sort books by publication year
-cursor.execute("SELECT title, publication_year FROM books ORDER BY publication_year ASC")
-sorted_books = cursor.fetchall()
-print("Books sorted by publication year:")
-for book in sorted_books:
-    print(book)
+def main() -> None:
 
-# 4. Grouping Query Example: Count the number of books per author
-cursor.execute("SELECT author_id, COUNT(*) FROM books GROUP BY author_id")
-books_per_author = cursor.fetchall()
-print("Books per author:")
-for record in books_per_author:
-    print(record)
+    # Log start of query execution
+    logger.info("Starting SQL query execution...")
 
-# 5. Join Query Example: Get books with their author's name
-cursor.execute("""
-    SELECT books.title, authors.name FROM books
-    INNER JOIN authors ON books.author_id = authors.author_id
-""")
-books_with_authors = cursor.fetchall()
-print("Books with their authors:")
-for record in books_with_authors:
-    print(record)
+    # Define path variables
+    ROOT_DIR = pathlib.Path(__file__).parent.resolve()
+    SQL_QUERIES_FOLDER = ROOT_DIR.joinpath("sql_queries")  
+    DATA_FOLDER = ROOT_DIR.joinpath("data")
+    DB_PATH = DATA_FOLDER.joinpath('db.sqlite')
 
-# Close the connection
-conn.close()
+    # Ensure the database file exists before attempting to connect
+    if not DB_PATH.exists():
+        logger.error(f"Database file not found at {DB_PATH}. Ensure the database is created first.")
+        return
+
+    # Connect to SQLite database
+    try:
+        connection = sqlite3.connect(DB_PATH)
+        logger.info(f"Connected to database: {DB_PATH}")
+
+        # Execute all SQL files in the sql_queries folder
+        for sql_file in sorted(SQL_QUERIES_FOLDER.glob("*.sql")):
+            execute_sql_file(connection, sql_file)
+
+        logger.info("SQL query execution completed successfully.")
+    except Exception as e:
+        logger.error(f"Error during SQL query execution: {e}")
+    finally:
+        connection.close()
+        logger.info("Database connection closed.")
+
+if __name__ == '__main__':
+    main()
